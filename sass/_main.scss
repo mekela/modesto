@@ -430,6 +430,11 @@
 				padding-bottom: 5px;
 			}
 		}
+	.remove{
+		position: absolute;
+		right: 40px;
+		top: 17px;
+	}
 /*----------end footer----------*/
 
 /*------------about-------------*/
@@ -529,3 +534,117 @@
 	}
 }
 /*----------end--action-----------*/
+
+/*----------basket--------*/
+.basket_table{
+	@include povh('');
+	padding: 10px 15px 0 0;
+	td{
+		padding-top: 20px;
+		vertical-align: top;
+		font-size: 16px;
+		color: #000;
+		position: relative;
+		padding-bottom: 6px;
+		border-bottom: 1px dashed #009640;
+		input{
+			width: 43px;
+			height: 23px;
+			border-radius: 0;
+			margin: 0 7px;
+			font-size: 16px;
+			color: #009640;
+			border-color: #828282;
+		}
+		section{
+			strong{
+				font-weight: normal;
+				display: block;
+				padding-bottom: 10px;
+			}
+			p{
+				font-size: 14px;
+				font-style: italic;
+				color: #7c7c7c;
+			}
+		}
+		.price, .order_input{
+			padding-top: 30px;
+		}
+			.price{
+				padding-top: 20px;
+				font-size: 26px;
+				font-weight: bold;
+				color: #009640;
+				small{
+					font-weight: normal;
+					font-size: 16px;
+				}
+			}
+			.price.summ{
+				color: #000;
+				font-size: 16px;
+				padding: 20px 0;
+				b{
+					color: #009640;
+					font-size: 20px;
+				}
+			}
+		.remove{
+			top: 20px;
+			right: 10px;
+		}
+	}
+}
+
+.basket_form{
+	padding: 20px 0 0 0;
+	width: 545px;
+	table{
+		width: 100%;
+	}
+	h4{
+		font-size: 16px;
+		font-weight: bold;
+	}
+	select{
+		color: #7c7c7c;
+		font-size: 14px;
+		width: 261px;
+		height: 24px;
+		text-indent: 5px;
+		background-color: #fff;
+		box-shadow: inset 0 1px 3px rgba(35,31,29,.35);
+
+	}
+	td{
+		padding-bottom: 8px;
+		color: #7c7c7c;
+		font-size: 14px;
+	}
+	label, h6{
+		display: block;
+		padding-bottom: 6px;
+	}
+	sup{
+		color: #009640;
+	}
+	input[type=text], textarea{
+		width: 261px;
+		height: 24px;
+		border-radius: 0;
+		border: none;
+		background-color: #ededed;
+		box-shadow: inset 0 1px 3px rgba(35,31,29,.35);
+	}
+	textarea{
+		width: 99%;
+		height: 90px;
+		padding: 10px;
+	}
+	.button{
+		width: 170px;
+	}
+}
+
+/*-------end--basket------*/

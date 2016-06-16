@@ -81,6 +81,10 @@
 	.delivery{
 		padding: 20px 10px;
 	}
+
+	.basket_form{
+		margin: 0 auto;
+	}
 }
 
 @include mq($max-width: 580px) {
@@ -175,6 +179,39 @@
 		padding-top: 20px;
 		text-align: center;
 	}
+	
+
+	.basket_table, .basket_form{
+		padding: 0 20px;
+		td, table, tr, tbody{
+			display: block;
+			width: 100%;
+			border: none;
+			text-align: center;
+			padding: 0;
+		}
+		 tr{
+		 	padding: 20px 0;
+		 	border-bottom: 1px dashed #009640;
+		 }
+	}
+	.basket_form{
+		padding-top: 40px ;
+		width: auto;
+		box-sizing: border-box;
+		tr{
+			padding: 0;
+			border-bottom: none;
+		}
+		textarea{
+			width: 90%;
+			margin: auto;
+		}
+		td{
+			padding-bottom: 10px;
+		}
+	}
+
 }
 
 @include mq($max-width: 380px) {
